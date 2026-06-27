@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Falk Burgers</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html">
+          <img
+            src="img/logo.jpeg"
+            alt="Falk Burgers Logo"
+            width="80"
+            height="80"
+          />
+          Falk Burgers
+        </a>
+
+        <button type="button" id="menu-toggle" class="menu-toggle">☰</button>
+
+        <div id="menu">
+          <ul>
+            <li>
+              <a href="index.html"> Cardápio </a>
+            </li>
+
+            <li>
+              <a href="carrinho.html"> Carrinho </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="banner">
+      <div class="container bg-grey">
+        <h1>O melhor hambúrguer artesanal da cidade!</h1>
+
+        <p>Sabor, qualidade e aquele hambúrguer que dá vontade de repetir.</p>
+
+        <a href="#cardapio"> Ver Cardápio </a>
+      </div>
+    </section>
+
+    <section id="cardapio">
+      <div class="container">
+        <h2>Nosso Cardápio</h2>
+
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <img src="img/burger1.png" alt="Hambúrguer Clássico" />
+              <div>
+                <h5>Classic Burger</h5>
+                <p>
+                  Pão Brioche, blend de carne 150g, queijo, alface, tomate e
+                  molho especial.
+                </p>
+                <p>R$ 29,90</p>
+                <a
+                  href="selecionado.html"
+                  data-nome="Classic Burger"
+                  data-preco="29,90"
+                  data-descricao="Pão Brioche, blend de carne 150g, queijo, alface, tomate e molho especial."
+                  data-imagem="img/burger1.png"
+                >
+                  Ver Detalhes
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="img/burger2.png" alt="Hambúrguer com Bacon" />
+              <div>
+                <h5>Bacon Burger</h5>
+                <p>
+                  Pão Brioche, blend de carne 150g, queijo, bacon crocante,
+                  alface, tomate e molho especial.
+                </p>
+                <p>R$ 34,90</p>
+                <a
+                  href="selecionado.html"
+                  data-nome="Bacon Burger"
+                  data-preco="34,90"
+                  data-descricao="Pão Brioche, blend de carne 150g, queijo, bacon crocante, alface, tomate e molho especial."
+                  data-imagem="img/burger2.png"
+                >
+                  Ver Detalhes
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="img/burger3.png" alt="Hambúrguer de Cheddar" />
+              <div>
+                <h5>Cheddar Burger</h5>
+                <p>
+                  Pão Brioche, blend de carne 150g, queijo cheddar e molho
+                  especial.
+                </p>
+                <p>R$ 24,90</p>
+                <a
+                  href="selecionado.html"
+                  data-nome="Cheddar Burger"
+                  data-preco="24,90"
+                  data-descricao="Pão Brioche, blend de carne 150g, queijo cheddar e molho especial."
+                  data-imagem="img/burger3.png"
+                >
+                  Ver Detalhes
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="img/burger4.png" alt="Hambúrguer Duplo Cheddar" />
+              <div>
+                <h5>Duplo Cheddar Burger</h5>
+                <p>
+                  Pão Brioche, 2 blends de carne 150g, queijo cheddar e molho
+                  especial.
+                </p>
+                <p>R$ 39,90</p>
+                <a
+                  href="selecionado.html"
+                  data-nome="Duplo Cheddar Burger"
+                  data-preco="39,90"
+                  data-descricao="Pão Brioche, 2 blends de carne 150g, queijo cheddar e molho especial."
+                  data-imagem="img/burger4.png"
+                >
+                  Ver Detalhes
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="img/burger5.png" alt="Hambúrguer de Frango" />
+              <div>
+                <h5>Chicken Burger</h5>
+                <p>
+                  Pão Brioche, frango empanado crocante, alface, tomate e molho
+                  especial.
+                </p>
+                <p>R$ 29,90</p>
+                <a
+                  href="selecionado.html"
+                  data-nome="Chicken Burger"
+                  data-preco="29,90"
+                  data-descricao="Pão Brioche, frango empanado crocante, alface, tomate e molho especial."
+                  data-imagem="img/burger5.png"
+                >
+                  Ver Detalhes
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="img/burger6.png" alt="Hambúrguer Vegetariano" />
+              <div>
+                <h5>Veggie Burger</h5>
+                <p>
+                  Pão Brioche, blend de carne vegetal 150g, queijo, alface,
+                  tomate, picles e molho especial.
+                </p>
+                <p>R$ 37,90</p>
+                <a
+                  href="selecionado.html"
+                  data-nome="Veggie Burger"
+                  data-preco="37,90"
+                  data-descricao="Pão Brioche, blend de carne vegetal 150g, queijo, alface, tomate, picles e molho especial."
+                  data-imagem="img/burger6.png"
+                >
+                  Ver Detalhes
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Aperitivos</h2>
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <img src="img/batata.png" alt="Batata Frita" />
+              <div>
+                <h5>Batata Frita</h5>
+                <p>
+                  Porção de 200g de batata frita crocante, perfeita para
+                  acompanhar seu hambúrguer.
+                </p>
+                <p>R$ 14,90</p>
+                <a
+                  href="selecionado.html"
+                  data-nome="Batata Frita"
+                  data-preco="14,90"
+                  data-descricao="Porção de 200g de batata frita crocante, perfeita para acompanhar seu hambúrguer."
+                  data-imagem="img/batata.png"
+                >
+                  Ver Detalhes
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="img/onionrings.png" alt="Cebola Empanada" />
+              <div>
+                <h5>Onion Rings</h5>
+                <p>
+                  Porção de 200g de cebola empanada crocante, perfeita para
+                  acompanhar seu hambúrguer.
+                </p>
+                <p>R$ 16,90</p>
+                <a
+                  href="selecionado.html"
+                  data-nome="Onion Rings"
+                  data-preco="16,90"
+                  data-descricao="Porção de 200g de cebola empanada crocante, perfeita para acompanhar seu hambúrguer."
+                  data-imagem="img/onionrings.png"
+                >
+                  Ver Detalhes
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="img/nuggets.png" alt="Chicken Nuggets" />
+              <div>
+                <h5>Chicken Nuggets</h5>
+                <p>
+                  Porção de 10 unidades de nuggets de frango empanadas e
+                  crocantes, perfeitas para acompanhar seu hambúrguer.
+                </p>
+                <p>R$ 19,90</p>
+                <a
+                  href="selecionado.html"
+                  data-nome="Chicken Nuggets"
+                  data-preco="19,90"
+                  data-descricao="Porção de 10 unidades de nuggets de frango empanadas e crocantes, perfeitas para acompanhar seu hambúrguer."
+                  data-imagem="img/nuggets.png"
+                >
+                  Ver Detalhes
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Bebidas</h2>
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <img src="img/coca.png" alt="Refrigerante" />
+              <div>
+                <h5>Refrigerante</h5>
+                <p>
+                  Lata de 350ml de refrigerante geladinho para acompanhar seu
+                  hambúrguer.
+                </p>
+                <p>R$ 8,90</p>
+                <a
+                  href="selecionado.html"
+                  data-nome="Refrigerante"
+                  data-preco="8,90"
+                  data-descricao="Lata de 350ml de refrigerante geladinho para acompanhar seu hambúrguer."
+                  data-imagem="img/coca.png"
+                >
+                  Ver Detalhes
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="img/suco.png" alt="Suco Natural" />
+              <div>
+                <h5>Suco Natural</h5>
+                <p>
+                  Copo de 250ml de suco natural para acompanhar seu hambúrguer.
+                </p>
+                <p>R$ 11,90</p>
+                <a
+                  href="selecionado.html"
+                  data-nome="Suco Natural"
+                  data-preco="11,90"
+                  data-descricao="Copo de 250ml de suco natural para acompanhar seu hambúrguer."
+                  data-imagem="img/suco.png"
+                >
+                  Ver Detalhes
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="img/agua.png" alt="Água" />
+              <div>
+                <h5>Água</h5>
+                <p>
+                  Garrafa de 350ml de água mineral para acompanhar seu
+                  hambúrguer.
+                </p>
+                <p>R$ 5,90</p>
+                <a
+                  href="selecionado.html"
+                  data-nome="Água"
+                  data-preco="5,90"
+                  data-descricao="Garrafa de 350ml de água mineral para acompanhar seu hambúrguer."
+                  data-imagem="img/agua.png"
+                >
+                  Ver Detalhes
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>O que nossos clientes dizem sobre nós?</h2>
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <p>
+                "O melhor hambúrguer que já comi! A carne é suculenta, o pão é
+                macio e o molho é incrível. Recomendo a todos!"
+              </p>
+
+              <h6>- Renato Gaúcho</h6>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <p>
+                "A qualidade dos ingredientes é excelente e o sabor é
+                maravilhoso. O atendimento é sempre muito bom. Adoro!"
+              </p>
+
+              <h6>- Marta Silva</h6>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <p>
+                "Os hambúrgueres são deliciosos e a atmosfera é convidativa.
+                Sempre volto a comer aqui!"
+              </p>
+
+              <h6>- Carlos Oliveira</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <h5>Falk Burgers</h5>
+        <p>Endereço: Universidade Católica de Brasília - UCB</p>
+        <p>Telefone: (61) 99999-9999</p>
+        <p>© 2026 Falk Burgers. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+    <script>
+      document
+        .querySelectorAll('a[href="selecionado.html"]')
+        .forEach((link) => {
+          link.addEventListener("click", (event) => {
+            event.preventDefault();
+
+            const nome = link.getAttribute("data-nome");
+            const preco = link.getAttribute("data-preco");
+            const descricao = link.getAttribute("data-descricao");
+            const imagem = link.getAttribute("data-imagem");
+
+            localStorage.setItem("nome", nome);
+            localStorage.setItem("preco", preco);
+            localStorage.setItem("descricao", descricao);
+            localStorage.setItem("imagem", imagem);
+
+            window.location.href = "selecionado.html";
+          });
+        });
+    </script>
+
+    <script>
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          var menu = document.getElementById("menu");
+          if (menu.style.display === "flex") {
+            menu.style.display = "none";
+          } else {
+            menu.style.display = "flex";
+          }
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Carrinho - Falk Burgers</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html">
+          <img
+            src="img/logo.jpeg"
+            alt="Falk Burgers Logo"
+            width="80"
+            height="80"
+          />
+          Falk Burgers
+        </a>
+
+        <button type="button" id="menu-toggle" class="menu-toggle">☰</button>
+
+        <div id="menu">
+          <ul>
+            <li>
+              <a href="index.html"> Cardápio </a>
+            </li>
+
+            <li>
+              <a href="carrinho.html"> Carrinho </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="carrinho-vazio">
+      <img
+        src="img/carrinho-vazio.png"
+        alt="Carrinho Vazio"
+        style="max-width: 300px"
+      />
+      <h2>Seu carrinho está vazio!</h2>
+      <p>Adicione um item ao cardápio para continuar com seu pedido.</p>
+
+      <a href="index.html" class="btn">Voltar ao Cardápio</a>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <h5>Falk Burgers</h5>
+        <p>Endereço: Universidade Católica de Brasília - UCB</p>
+        <p>Telefone: (61) 99999-9999</p>
+        <p>&copy; 2026 Falk Burgers. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script>
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          var menu = document.getElementById("menu");
+          if (menu.style.display === "flex") {
+            menu.style.display = "none";
+          } else {
+            menu.style.display = "flex";
+          }
+        });
+    </script>
+  </body>
+</html>

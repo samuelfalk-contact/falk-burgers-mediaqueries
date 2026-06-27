@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Produto Selecionado - Falk Burgers</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html">
+          <img
+            src="img/logo.jpeg"
+            alt="Falk Burgers Logo"
+            width="80"
+            height="80"
+          />
+          Falk Burgers
+        </a>
+
+        <button type="button" class="menu-toggle" id="menu-toggle">☰</button>
+
+        <div id="menu">
+          <ul>
+            <li>
+              <a href="index.html"> Cardápio </a>
+            </li>
+
+            <li>
+              <a href="carrinho.html"> Carrinho </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="selecionado">
+      <div class="row">
+        <div class="col">
+          <img id="imagem" src="img/burger1.png" alt="Hambúrguer Clássico" />
+        </div>
+
+        <div class="col">
+          <h2 id="nome">Classic Burger</h2>
+          <p id="descricao">
+            Pão brioche, blend de carne 150g, queijo, alface, tomate e molho
+            especial.
+          </p>
+          <p id="preco">R$ 29,90</p>
+
+          <a href="carrinho.html">Adicionar ao Carrinho</a>
+          <a href="index.html">Voltar ao Cardápio</a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <h5>Falk Burgers</h5>
+        <p>Endereço: Universidade Católica de Brasília - UCB</p>
+        <p>Telefone: (61) 99999-9999</p>
+        <p>© 2026 Falk Burgers. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("nome").textContent =
+        localStorage.getItem("nome");
+      document.getElementById("preco").textContent =
+        "R$ " + localStorage.getItem("preco");
+      document.getElementById("descricao").textContent =
+        localStorage.getItem("descricao");
+      document.getElementById("imagem").src = localStorage.getItem("imagem");
+    </script>
+
+    <script>
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          var menu = document.getElementById("menu");
+          if (menu.style.display === "flex") {
+            menu.style.display = "none";
+          } else {
+            menu.style.display = "flex";
+          }
+        });
+    </script>
+  </body>
+</html>
