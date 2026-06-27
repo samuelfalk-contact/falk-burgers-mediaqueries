@@ -302,4 +302,12 @@ section h2 {
     .col {
         flex: 0 0 100%;
     }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .row {
+        gap: 10px;
+    }
 }
