@@ -310,4 +310,12 @@ section h2 {
     .row {
         gap: 10px;
     }
+
+    .selecionado {
+        padding: 15px;
+    }
+
+    .selecionado .col {
+        flex: 0 0 100%;
+    }
 }
